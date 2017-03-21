@@ -7,6 +7,7 @@
 
 
 **Methodology**
+
 ![figure_2.png]({{site.baseurl}}/figure_2.png)
 
 
