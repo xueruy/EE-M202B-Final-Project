@@ -8,9 +8,7 @@
 
 **Methodology**
 
-<p align="center">
-  <img src="EE-M202B-Final-Project/figure_2.png" width="350"/>
-</p>
+![alt tag](http://EE-M202B-Final-Project/figure_2.png)
 
 
 ##
