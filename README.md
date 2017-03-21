@@ -1,11 +1,13 @@
 # EE-M202B-Final-Project
 
-Introduction
+**Introduction**
 
-Methodology
+**Methodology**
 
-Experimental Setup
+**Experimental Setup**
 
-Experimental Evaluation
+**Experimental Evaluation**
 
-Conclusion
+**Future Work**
+
+**Conclusion**
