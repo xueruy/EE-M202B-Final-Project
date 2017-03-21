@@ -8,7 +8,7 @@
 
 **Methodology**
 
-![]({{site.baseurl}}//Screen%20Shot%202017-03-18%20at%208.26.48%20PM.png)
+EE-M202B-Final-Project/figure_2.png
 
 
 ##
