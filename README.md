@@ -1,12 +1,14 @@
  EE-M202B-Final-Project
 
-**Introduction**
+
+
+# Introduction
 
 
 
 
 
-**Methodology**
+# Methodology
 
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/22850278/24138603/17d2e5e0-0dd6-11e7-9e12-df5e0b3af57c.png" width="550"/>
@@ -16,7 +18,7 @@
 
 
 
-**Experimental Setup**
+# Experimental Setup
 
 We choose one of the UCLA Boelter Hall 4th floor halls as our data collection place. We choose this place as our test area because this area has good internet service (our Smartthing hub only support LAN port) and this area has both low-density area and high-density area. Therefore, we can verify the model in different circumstance. Since we only have four sensors, we evenly distribute these sensors along the hall. Therefore, we divide the hall into 4 areas. 
 
@@ -38,7 +40,7 @@ We also get the information of the fluorescent lamp by taking a picture of the l
 Besides the equipment, we need to develop a way to log our data. We refer a code from online that can log data from smart sensor to the google sheet. The hub will log the data it get from the smart sensor as well as the current time. If the incoming data is “high”, it will log a “1” with the current time in the google sheet. It will log “0” if the incoming data is “low”. After we get the data, we change the time format and convert it to a csv file for python to read. 
 
 
-**Experimental Results and Evaluation**
+# Experimental Results and Evaluation
 
 Generally, we choose the degree 5 as our result for weekday because degree 5 has a higher score than degree 4 and degree 6. For the weekend, degree 4 has the higher score. 
 
@@ -61,18 +63,18 @@ The weekend data looks similar to weekday data, but with less frequency of peopl
 
 The data for weekend has less degree than the data for weekday. However, we notice that the two edges is going down rather than going up. We think the reason could be that the Seasnet is open on 1PM and closed around 8~9. Therefore there are more people coming and on on these two time period. We think that if we have more data, we could get rid of this kind of period. 
 
-**Related Work**
+# Related Work
 
 We did a lot of research, but actually there is no really similar research that could provide us some previous experiences and technology. In fact, We use self-piped regressive model in our case, so we did not figure out that other researcher or group that use this machine learning method to analyze the lighting system in large-scale public buildings. The only research paper found that are close to our research paper is the one that provided by Prof. Mani Srivastava. The paper named “Data Predictive Control for Peak Power Reduction”[4], which presents data-driven based methods which are implemented by data predictive control with regression trees (DPCRT) for making receding horizon control-oriented model in order to reduce peak power in buildings and maintain thermal comfort. The work of their research is relatively close to our topic and we get some inspiration from the experimental setup and the way of evaluation from their content of research paper.  
 
-**Conclusion and Future work**
+# Conclusion and Future work
 
 Our experiment shows that the DPM method we use can reduce the energy consumed by the fluorescent lamp by dynamically change the waiting time for the lamp. The data shows that the energy could be decreased by 30% by using the Naive model. Yet there is a lot of improvement we can do, such as using more data as our sample to get a more accurate model for our prediction. We can also add the Office/class schedule into the data so the algorithm can set up a base model before learning the real data. 
 
 This model should be embedded in microcontroller for real time use. We use Smartthing Hub because we want to see whether there is a potential energy drop by using Data Precontrol Mode. Now that we shows that using DPM can reduce the energy consumption, the next step would be using a real microcontroller and measure the energy by a physical meter to see the result. Although DPM method can drop the energy a lot, the hard part comes from the installation and the maintenance. As LED is replacing the fluorescent light in the future, then the combination of LED and DPM may reduce the energy consumption on campus to the lowest level. 
 
 
-**Reference** 
+# Reference
 
 [1] “Does Turning Fluorescent Lights Off Use More Energy Than Leaving Them On?”. Retrieved from: https://www.scientificamerican.com/article/turn-fluorescent-lights-off-when-you-leave-room/
 [2] “Robust linear estimator fitting”. Retrieved from: http://scikit-learn.org/stable/auto_examples/linear_model/plot_robust_fit.html#sphx-glr-auto-examples-linear-model-plot-robust-fit-py 
@@ -80,7 +82,7 @@ This model should be embedded in microcontroller for real time use. We use Smart
 [4] “Data Predictive Control for Peak Power Reduction”. A. jain, etc. Retrieved From:
 https://dl.acm.org/citation.cfm?id=2993582
 
-**Weekly Update** 
+# Weekly Update
 
 Week 6:
 Get the equipment from the TA and set up the network of Smartthing
