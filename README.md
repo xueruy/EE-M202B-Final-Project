@@ -138,7 +138,7 @@ The figure of Area 1 testing point of DPM programming regression output is shown
 
  <img src="https://cloud.githubusercontent.com/assets/10173940/24233375/14a513d2-0f4f-11e7-8d8f-2ec9523999aa.png">
  
- <\p>
+ </p>
  
  The power consumption output in the console, of Area 1 testing point of DPM programming is shown below.
 
@@ -146,7 +146,7 @@ The figure of Area 1 testing point of DPM programming regression output is shown
 
  <img src="https://cloud.githubusercontent.com/assets/22850278/24234863/c62042e6-0f57-11e7-8efd-62c6f12c6c84.png">
  
- <\p>
+ </p>
  
  
 # Experimental Setup
