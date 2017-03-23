@@ -210,7 +210,7 @@ We did a lot of research, but actually there is no really similar research that 
 
 # Conclusion and Future work
 
-Our experiment shows that the DPM method we use can reduce the energy consumed by the fluorescent lamp by dynamically change the waiting time for the lamp. The data shows that the energy could be decreased by 30% by using the Naive model. Yet there is a lot of improvement we can do, such as using more data as our sample to get a more accurate model for our prediction. We can also add the Office/class schedule into the data so the algorithm can set up a base model before learning the real data. 
+Our experiment shows that the DPM method we use can reduce the energy consumed by the fluorescent lamp by dynamically change the waiting time for the lamp. The data shows that the energy could be decreased by 30% than using the Naive model. Yet there is a lot of improvement we can do, such as using more data as our sample to get a more accurate model for our prediction. We can also add the Office/class schedule into the data so the algorithm can set up a base model before learning the real data. 
 
 This model should be embedded in microcontroller for real time use. We use Smartthing Hub because we want to see whether there is a potential energy drop by using Data Precontrol Mode. Now that we shows that using DPM can reduce the energy consumption, the next step would be using a real microcontroller and measure the energy by a physical meter to see the result. Although DPM method can drop the energy a lot, the hard part comes from the installation and the maintenance. As LED is replacing the fluorescent light in the future, then the combination of LED and DPM may reduce the energy consumption on campus to the lowest level. 
 
