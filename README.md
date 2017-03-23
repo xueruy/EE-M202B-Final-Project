@@ -1,8 +1,9 @@
- EE-M202B-Final-Project
 
+Indroduction
 
+Methodology[]
 
-# Introduction
+# [](#header-1)Introduction
 
 
 
@@ -32,7 +33,9 @@ We use this sensor to detect the occurrence of people in the different area in t
 
 Beside the sensors, we also need to use the TP-LINK Wi-Fi as a wifi client for Smartthing Hub. The AP client transform the LAN signal of Smartthing Hub into wifi and connect to the Wifi of the campus. 
 
-![1](https://cloud.githubusercontent.com/assets/10173940/24233058/ccc015a0-0f4c-11e7-86d6-3ed3c73514eb.png)
+<p align="center">
+ <img src="https://cloud.githubusercontent.com/assets/10173940/24233058/ccc015a0-0f4c-11e7-86d6-3ed3c73514eb.png">
+</p>
 
 We also get the information of the fluorescent lamp by taking a picture of the lamp. We learned that the working power of the lamp is 26W. So we will use this data to estimate the energy. 
 
@@ -77,20 +80,32 @@ This model should be embedded in microcontroller for real time use. We use Smart
 # Reference
 
 [1] “Does Turning Fluorescent Lights Off Use More Energy Than Leaving Them On?”. Retrieved from: https://www.scientificamerican.com/article/turn-fluorescent-lights-off-when-you-leave-room/
+
 [2] “Robust linear estimator fitting”. Retrieved from: http://scikit-learn.org/stable/auto_examples/linear_model/plot_robust_fit.html#sphx-glr-auto-examples-linear-model-plot-robust-fit-py 
+
 [3] “Code reference for logging data to google sheet”. Retrieved From: https://community.smartthings.com/t/log-events-to-google-sheets-see-post-154-for-current-github-repo-and-v1-1/36719
+
 [4] “Data Predictive Control for Peak Power Reduction”. A. jain, etc. Retrieved From:
 https://dl.acm.org/citation.cfm?id=2993582
 
 # Weekly Update
 
 Week 6:
+
 Get the equipment from the TA and set up the network of Smartthing
+
 Week 7:
+
 Write the code for Smartthing to automatically log sensor info on the online google Sheet. Start taking data. 
+
 Week 8:
+
 Set up the base algorithm, find which part should be learned by machine learning and keep taking data(including the weekend data)
+
 Week 9:
+
 Optimize the algorithm to evaluate the data precisely. Isolate weekend data from weekday data. Write the code for the control side. 
+
 Week 10:
+
 Optimize the algorithm. Set up the presentation. Building website
