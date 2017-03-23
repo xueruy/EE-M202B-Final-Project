@@ -3,7 +3,7 @@ Link to this website:
 https://xueruy.github.io/EE-M202B-Final-Project/
 
 # Abstract
-[abstract](#Header2)
+
 Nowadays, phenomenon of ever-lasting lighting at large-scale public buildings is seriously universal, and the different lighting systems results in hugh different power consumptions even in the similar building environment. Our group came up with a new Data Precontrol Model (DPM) that is a smart lighting system which could help with managing the lighting in large-scale public buildings. The entire of our research make the comparisons among the Lighting System of Naive Lighting Control, Sensor-mode Control and Data Precontrol Model. The experimental result shows that DPM have the significant energy reduction of using fluorescent lamp in the UCLA large scale building. The DPM has around 43% lower energy cost compared with Naive strategy and approximate 38% lower than that of Sensor-mode strategy. For the future work, we will use more advanced devices related to the lighting and testing system to get more accurate research results, and add more features in the machine learning algorithm to provide a better prediction account on energy consumption schedule.    
 
 # Introduction
