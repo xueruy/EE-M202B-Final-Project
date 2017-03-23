@@ -16,9 +16,7 @@
 
 
 
-*Experimental Setup*
-
-
+**Experimental Setup**
 
 We choose one of the UCLA Boelter Hall 4th floor halls as our data collection place. We choose this place as our test area because this area has good internet service (our Smartthing hub only support LAN port) and this area has both low-density area and high-density area. Therefore, we can verify the model in different circumstance. Since we only have four sensors, we evenly distribute these sensors along the hall. Therefore, we divide the hall into 4 areas. 
 
@@ -40,9 +38,15 @@ We also get the information of the fluorescent lamp by taking a picture of the l
 Besides the equipment, we need to develop a way to log our data. We refer a code from online that can log data from smart sensor to the google sheet. The hub will log the data it get from the smart sensor as well as the current time. If the incoming data is “high”, it will log a “1” with the current time in the google sheet. It will log “0” if the incoming data is “low”. After we get the data, we change the time format and convert it to a csv file for python to read. 
 
 
-**Experimental Evaluation**
+**Experimental Results and Evaluation**
 
-#
+Generally, we choose the degree 5 as our result for weekday because degree 5 has a higher score than degree 4 and degree 6. For the weekend, degree 4 has the higher score. 
+
+For the weekday, we got the following graph and score for Area 1-4
+
+![weekday_area1](https://cloud.githubusercontent.com/assets/10173940/24233375/14a513d2-0f4f-11e7-8d8f-2ec9523999aa.png)
+![weekday_area2](https://cloud.githubusercontent.com/assets/10173940/24233378/15c3e4fa-0f4f-11e7-88d6-9471910d559a.png)
+![weekday_area3](https://cloud.githubusercontent.com/assets/10173940/24233379/16d85fd8-0f4f-11e7-9865-bde5c38be792.png)
 
 
 **Future Work**
