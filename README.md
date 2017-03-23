@@ -122,8 +122,33 @@ If light-OFF Probability <= 0.6, we execute Rule 1, due to over-threshold waitin
 
 </p>
 
+We set the threshold of light-OFF Probability to be 0.6 because we could assume that the probability that is lower than this value have many enough (0->1) events and the light OFF waiting time is not too much in the time interval, whereas if the probability is higher than 0.6, it could be recognized as that the waiting time of light OFF is enough long and less (0 -> 1) events occur.  
 
+#### Energy Computation Algorithm for Naive and Sensor-mode Control
 
+As for the Naive Energy Consumption, it is actually really intuitive because the Naive Energy consumption = Energy_light_ON, and the setup energy could be ignored due to its tiny ratio compared with its total power consumption. 
+
+In terms of the Sensor-mode Energy consumption, the **LightOffTime** is used as the sum of light ON time for over-threshold waiting time. The entire computation equation could be expressed as Energy consumption = **occurTime** * **setupEnergy** + **maintainPower** * (**deltaT** - **LightOffTime** + **occurTime** * 5 * 60) 
+
+### DPM Programming Output Validation Testing result
+
+The figure of Area 1 testing point of DPM programming regression output is shown below.
+
+<p align="center">
+
+ <img src="https://cloud.githubusercontent.com/assets/10173940/24233375/14a513d2-0f4f-11e7-8d8f-2ec9523999aa.png">
+ 
+ <\p>
+ 
+ The power consumption output in the console, of Area 1 testing point of DPM programming is shown below.
+
+<p align="center">
+
+ <img src="https://cloud.githubusercontent.com/assets/22850278/24234863/c62042e6-0f57-11e7-8efd-62c6f12c6c84.png">
+ 
+ <\p>
+ 
+ 
 # Experimental Setup
 
 We choose one of the UCLA Boelter Hall 4th floor halls as our data collection place. We choose this place as our test area because this area has good internet service (our Smartthing hub only support LAN port) and this area has both low-density area and high-density area. Therefore, we can verify the model in different circumstance. Since we only have four sensors, we evenly distribute these sensors along the hall. Therefore, we divide the hall into 4 areas. 
