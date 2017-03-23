@@ -1,4 +1,7 @@
 
+# Abstract
+
+Nowadays, phenomenon of ever-lasting lighting at large-scale public buildings is seriously universal, and the different lighting systems results in hugh different power consumptions even in the similar building environment. Our group came up with a new Data Precontrol Model (DPM) that is a smart lighting system which could help with managing the lighting in large-scale public buildings. The entire of our research make the comparisons among the Lighting System of Naive Lighting Control, Sensor-mode Control and Data Precontrol Model. The experimental result shows that DPM have the significant energy reduction of using fluorescent lamp in the UCLA large scale building. The DPM has around 43% lower energy cost compared with Naive strategy and approximate 39% lower than that of Sensor-mode strategy.    
 
 # Introduction
 
@@ -210,7 +213,7 @@ We did a lot of research, but actually there is no really similar research that 
 
 # Conclusion and Future work
 
-Our experiment shows that the DPM method we use can reduce the energy consumed by the fluorescent lamp by dynamically change the waiting time for the lamp. The data shows that the energy could be decreased by 30% than using the Naive model. Yet there is a lot of improvement we can do, such as using more data as our sample to get a more accurate model for our prediction. We can also add the Office/class schedule into the data so the algorithm can set up a base model before learning the real data. 
+Our experiment shows that the DPM method we use can reduce the energy consumed by the fluorescent lamp by dynamically change the waiting time for the lamp. The data shows that the energy could be decreased by 43% than using the Naive model. Yet there is a lot of improvement we can do, such as using more data as our sample to get a more accurate model for our prediction. We can also add the Office/class schedule into the data so the algorithm can set up a base model before learning the real data. 
 
 This model should be embedded in microcontroller for real time use. We use Smartthing Hub because we want to see whether there is a potential energy drop by using Data Precontrol Mode. Now that we shows that using DPM can reduce the energy consumption, the next step would be using a real microcontroller and measure the energy by a physical meter to see the result. Although DPM method can drop the energy a lot, the hard part comes from the installation and the maintenance. As LED is replacing the fluorescent light in the future, then the combination of LED and DPM may reduce the energy consumption on campus to the lowest level. 
 
