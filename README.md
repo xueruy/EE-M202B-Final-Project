@@ -76,6 +76,51 @@ The following graphs show the testing result of each linear model mentioned abov
  <img src="https://cloud.githubusercontent.com/assets/22850278/24234435/8cfb0ea8-0f55-11e7-8770-0623173db869.png">
 </p>
 
+From the above graphs, it can be found that RANSAC and TheilSen regressors are not fairly fitted with our expected regression model. Although OLS plot looks performed as well as Ridge, the normalized parameter in the OLS have to be set to True in order to obtain the above result, which would give rise to the hyperparameters learnt more robust and almost independent of the number of data if the OLS is normalized. 
+
+Therefore, we finally choose ridge regressor as our linear model to pipeline with polynomial regressive interpolation. 
+
+As for the more specific explanation of using ridge piped with polynomial regression, from n data 1d points, this combo suffices to build the Vandermonde matrix, which is n data * n-th degree+1, the form shown in the Figure below. Intuitively, the generated matrix can be interpreted as a matrix of pseudo features (the points raised to some power). The matrix is akin to (but different from) the matrix induced by a polynomial kernel. 
+
+<p align="center">
+
+<img src="https://cloud.githubusercontent.com/assets/22850278/24234616/8c459586-0f56-11e7-96c2-bd1686474592.png">
+
+</p>
+
+Accordingly, we are able to approximate a function with a polynomial of degree n_degree by using ridge regression reasonably and reliably. 
+
+### Energy Computation Algorithm in DPM
+
+#### Computation Algorithm for DPM
+
+We then come up with the the energy computation algorithm for DPM to compute the lighting energy consumption (Unit: Watt*h) in different resulted time intervals which obtained from regressive function. For convenience, our algorithm also cover the energy computation of Naive and Sensor-mode methods. 
+
+We then come up with the the energy computation algorithm for DPM to compute the lighting energy consumption (Unit: Watt*h) in different resulted time intervals which obtained from regressive function. For convenience, our algorithm also cover the energy computation of Naive and Sensor-mode methods. 
+
+The very base equation of the idea of power computation is Energy consumption = **Energy_light_ON** + **Energy_light_setup**, where **Energy_light_setup** is the trigger energy consumption of turning on light instantly. 
+
+In this energy computation model, we use 5-minute Rule[1] of light ON/OFF to be set as Light OFF waiting threshold time, so that we could compute the setup energy cost of the lighting system. As for this Rule that contains two rules, the Rule 1 is If you will be out of a room for 5 minutes or less, leave it on, the Rule 2 is If you will be out of a room for more than 5 minutes, turn it off.
+
+Then we introduce one important variable which is **light-OFF Probability**, it is the ratio of sum of light OFF waiting time (0->1) above the waiting threshold time vs. the sum of total light OFF waiting time in one time interval. 
+
+If Probability > 0.6, we execute Rule 2, due to over-threshold waiting time dominated. We introduced **totalLightOffTime** under this rule, light no longer waits threshold time, use totalLight OffTime instead of **tdmean** to compute **Energy_light_ON**.  We then set the **totalTime** as the total light ON/OFF time to compute **Energy_light_setup**, and it is punished by the coefficient of negative correlation of light-OFF Probability. The complete equation in this case is shown below. 
+
+<p align="center">
+
+<img src="https://cloud.githubusercontent.com/assets/22850278/24234772/5268f9f6-0f57-11e7-9c73-dfce7c6968eb.png">
+
+</p>
+
+Additionally, the **deltaT** is the entire time difference of the time interval.
+
+If light-OFF Probability <= 0.6, we execute Rule 1, due to over-threshold waiting time not dominated. We introduce the **tdMean** as average waiting time within the time interval which is as mentioned above, obtained from second derivative, and **tdMean** is obtained by integrational average from regressive equation based on its time interval to compute **Energy_light_ON**. And introduce **occurTime** that the times of over-threshold waiting time to compute **Energy_light_setup**. The complete equation is shown below.
+
+<p align="center">
+
+<img src="https://cloud.githubusercontent.com/assets/22850278/24234773/5398cfa4-0f57-11e7-8b68-c3ce7f0e57a2.png">
+
+</p>
 
 
 
