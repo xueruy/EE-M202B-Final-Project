@@ -16,7 +16,7 @@
 
 
 
-**Experimental Setup**
+*Experimental Setup*
 
 
 
@@ -25,11 +25,15 @@ We choose one of the UCLA Boelter Hall 4th floor halls as our data collection pl
 Since my partner and I both have classes in the daytime, we are unable to get a complete one-day data. We take the trade off to spilt the one day data into different period within a week and combine the data we took for the whole week as one day. The reason we use this method is because the hall we choose only contains Seas Lab and offices and there is no classroom in the hallway. Therefore, there should be less variation on people volume within each weekday from Monday to Friday. Besides, we divide our data into Weekday group and Weekend group so we can get more accurate data for each day. For weekday, we choose 7:00am to 11:00pm as our time period.  We consider the other time period the same as “night time as this time period should has the same pattern as time around 11pm (and we need to sleep as well). For weekend, we choose 1pm to 8pm as our data time range. 
 
 The sensor we choose is Smartthing motion sensor (2013 edition) powered by Samsung. Since the sensor is the first edition, we are unable to find its range. The average Battery life is around 2080 hrs. 
+
 ![sensor](https://cloud.githubusercontent.com/assets/10173940/24233055/c968b11e-0f4c-11e7-8622-b35aa09bf749.png)
+
 We use this sensor to detect the occurrence of people in the different area in the hall. When the sensor detect a heat (a people), it will send the hub a “high” signal using Zigbee network. When the sensor detect no heat, it will send the hub a “low” signal one minute later using Zigbee.  
 
 Beside the sensors, we also need to use the TP-LINK Wi-Fi as a wifi client for Smartthing Hub. The AP client transform the LAN signal of Smartthing Hub into wifi and connect to the Wifi of the campus. 
+
 ![1](https://cloud.githubusercontent.com/assets/10173940/24233058/ccc015a0-0f4c-11e7-86d6-3ed3c73514eb.png)
+
 We also get the information of the fluorescent lamp by taking a picture of the lamp. We learned that the working power of the lamp is 26W. So we will use this data to estimate the energy. 
 
 
