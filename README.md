@@ -128,7 +128,7 @@ We set the threshold of light-OFF Probability to be 0.6 because we could assume 
 
 As for the Naive Energy Consumption, it is actually really intuitive because the Naive Energy consumption = Energy_light_ON, and the setup energy could be ignored due to its tiny ratio compared with its total power consumption. 
 
-In terms of the Sensor-mode Energy consumption, the **LightOffTime** is used as the sum of light ON time for over-threshold waiting time. The entire computation equation could be expressed as Energy consumption = **occurTime** * **setupEnergy** + **maintainPower** * (**deltaT** - **LightOffTime** + **occurTime** * 5 * 60) 
+In terms of the Sensor-mode Energy consumption, the **LightOffTime** is used as the sum of light Off time for over-threshold waiting time. The entire computation equation could be expressed as Energy consumption = **occurTime** * **setupEnergy** + **maintainPower** * (**deltaT** - **LightOffTime** + **occurTime** * 5 * 60) 
 
 ### DPM Programming Output Validation Testing result
 
