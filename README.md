@@ -47,7 +47,8 @@ For the weekday, we got the following graph and score for Area 1-4
 ![weekday_area1](https://cloud.githubusercontent.com/assets/10173940/24233375/14a513d2-0f4f-11e7-8d8f-2ec9523999aa.png)
 ![weekday_area2](https://cloud.githubusercontent.com/assets/10173940/24233378/15c3e4fa-0f4f-11e7-88d6-9471910d559a.png)
 ![weekday_area3](https://cloud.githubusercontent.com/assets/10173940/24233379/16d85fd8-0f4f-11e7-9865-bde5c38be792.png)
-
+![weekday_area4](https://cloud.githubusercontent.com/assets/10173940/24233401/3e87099e-0f4f-11e7-92c7-90060a1da5f3.png)
+![weekday](https://cloud.githubusercontent.com/assets/10173940/24233522/0fb5fa16-0f50-11e7-9ba2-18ebbf0e4faf.png)
 
 **Future Work**
 
